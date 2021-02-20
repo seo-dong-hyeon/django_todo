@@ -5,6 +5,8 @@
     <br>
     <h3>{{ todo.title }}</h3>
     <p>{{ todo.text|safe }}</p>
+    <p>{{ todo.is_completed }}</p>
     <br>
     Created on {{ todo.created_at }}
+    Updated on {{ todo.updated_at }}
 {% endblock %}
